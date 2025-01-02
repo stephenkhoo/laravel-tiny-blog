@@ -1,8 +1,8 @@
 <x-blog-layout>
-    <slot:meta>
+    <x-slot name="meta>
         <x-tb-meta :title="$article->title" :description="$article->description" :keywords="$article->keywords" :canonical="route('tinyblog.article', ['slug' => $article->slug])" :image="$article->img"
             type="article" />
-    </slot:meta>
+    </x-slot>
 
     <div class="px-4 py-12 max-w-4xl mx-auto">
         <div class="my-12">
